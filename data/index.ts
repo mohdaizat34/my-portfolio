@@ -121,7 +121,7 @@ export const testimonials = [
     quote:
       "Interpreted my chaotic instructions like a mind reader and delivered perfectly. Professional, fast, and slightly magical.",
     name: "Eden",
-    title: "Just a user from Danganronpa Garry's Mod",
+    title: "Just a user from Danganronpa Garrys Mod",
   },
 ];
 
