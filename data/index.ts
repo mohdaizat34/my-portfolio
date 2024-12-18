@@ -76,7 +76,7 @@ export const projects = [
     des: "Built with Angular,this To-Do app allows you to manage tasks effortlessly by adding, updating, deleting, and sorting them.",
     img: "/todo.jpeg",
     iconLists: ["/angular_gradient.png", "/ts.svg", "/bootstrap.png"],
-    link: "/ui.earth.com",
+    link: "https://github.com/mohdaizat34/todo-app",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "An interactive portfolio showcasing my skills, projects, and passion.",
     img: "/portfolio.png",
     iconLists: ["/react.png","/next.svg", "/tail.svg", "/ts.svg", "/three.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/mohdaizat34/my-portfolio",
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const projects = [
     des: "AeroGrow AR is an augmented reality project built with Unity and Vuforia, guiding users through the aeroponics farming setup with step-by-step animations and an AI chat assistant.",
     img: "/ar.png",
     iconLists: ["/unity.png", "/blender.png", "/vuforia.png", "/c4.svg","/inworld.png"],
-    link: "/ui.aiimg.com",
+    link: "https://www.youtube.com/watch?v=mNRIBQM2RFw&ab_channel=PrintPsyche",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ export const projects = [
     des: "Built a web-based CRUD application for managing club memberships and events using the Laravel framework. The system supports role-based access control for different types of users (admins, members).",
     img: "/laravel-project.png",
     iconLists: ["/laravel.svg", "/php.png", "/mysql.png"],
-    link: "/ui.apple.com",
+    link: "https://github.com/mohdaizat34/club-management",
   },
 ];
 
