@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,9 +7,9 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
+// Button component
 export function Button({
   borderRadius = "1.75rem",
   children,
@@ -32,7 +32,6 @@ export function Button({
   return (
     <Component
       className={cn(
-        // remove h-16 w-40, add  md:col-span-2
         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
         containerClassName
       )}
@@ -70,6 +69,7 @@ export function Button({
   );
 }
 
+// MovingBorder component
 export const MovingBorder = ({
   children,
   duration = 2000,
@@ -86,11 +86,24 @@ export const MovingBorder = ({
   const pathRef = useRef<any>();
   const progress = useMotionValue<number>(0);
 
+  // Use state to handle SSR
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Check if we're in the client side (browser)
+    if (typeof window !== "undefined") {
+      setIsClient(true);
+    }
+  }, []);
+
+  // Run animation frame only if on client-side
   useAnimationFrame((time) => {
-    const length = pathRef.current?.getTotalLength();
-    if (length) {
-      const pxPerMillisecond = length / duration;
-      progress.set((time * pxPerMillisecond) % length);
+    if (isClient && pathRef.current) {
+      const length = pathRef.current?.getTotalLength();
+      if (length) {
+        const pxPerMillisecond = length / duration;
+        progress.set((time * pxPerMillisecond) % length);
+      }
     }
   });
 
@@ -104,6 +117,10 @@ export const MovingBorder = ({
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
+
+  if (!isClient) {
+    return null; // Or a placeholder, if desired
+  }
 
   return (
     <>
