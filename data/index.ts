@@ -8,7 +8,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I value flexibility and open communication, always adapting to client needs. ",
+    title:
+      "I value flexibility and open communication, always adapting to client needs. ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -72,30 +73,51 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "To-Do App",
-    des: "Built with Angular,this To-Do app allows you to manage tasks effortlessly by adding, updating, deleting, and sorting them.",
-    img: "/todo.jpeg",
-    iconLists: ["/angular_gradient.png", "/ts.svg", "/bootstrap.png"],
-    link: "https://github.com/mohdaizat34/todo-app",
+    title: "Malaysia Weather Forecast",
+    des: "View real-time 7-day weather forecasts by selecting State, Recreation Centre, District, Town, or Division.",
+    img: "/weather.png",
+    iconLists: ["/react.png", "/next.svg", "/tail.svg"],
+    link: "https://malaysia-weather.up.railway.app/",
   },
   {
     id: 2,
     title: "My Portfolio",
     des: "An interactive portfolio showcasing my skills, projects, and passion.",
     img: "/portfolio.png",
-    iconLists: ["/react.png","/next.svg", "/tail.svg", "/ts.svg", "/three.svg"],
+    iconLists: [
+      "/react.png",
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/three.svg",
+    ],
     link: "https://github.com/mohdaizat34/my-portfolio",
   },
   {
     id: 3,
+    title: "To-Do App",
+    des: "Built with Angular,this To-Do app allows you to manage tasks effortlessly by adding, updating, deleting, and sorting them.",
+    img: "/todo.jpeg",
+    iconLists: ["/angular_gradient.png", "/ts.svg", "/bootstrap.png"],
+    link: "https://github.com/mohdaizat34/todo-app",
+  },
+
+  {
+    id: 4,
     title: "AeroGrow AR",
     des: "AeroGrow AR is an augmented reality project built with Unity and Vuforia, guiding users through the aeroponics farming setup with step-by-step animations and an AI chat assistant.",
     img: "/ar.png",
-    iconLists: ["/unity.png", "/blender.png", "/vuforia.png", "/c4.svg","/inworld.png"],
+    iconLists: [
+      "/unity.png",
+      "/blender.png",
+      "/vuforia.png",
+      "/c4.svg",
+      "/inworld.png",
+    ],
     link: "https://www.youtube.com/watch?v=mNRIBQM2RFw&ab_channel=PrintPsyche",
   },
   {
-    id: 4,
+    id: 5,
     title: "Club Management System",
     des: "Built a web-based CRUD application for managing club memberships and events using the Laravel framework. The system supports role-based access control for different types of users (admins, members).",
     img: "/laravel-project.png",
@@ -106,8 +128,7 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "fast delivery understood what i sent had no complaints.",
+    quote: "fast delivery understood what i sent had no complaints.",
     name: "notstormi",
     title: "Fiverr user",
   },
@@ -161,7 +182,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Junior Software Developer", 
+    title: "Junior Software Developer",
     desc: "Assisted in deploying software via IIS, developing an email scheduler in C#, creating TSDs, and extracting data for monthly graph reports from TOAD for Oracle.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
@@ -186,11 +207,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/mohdaizat34"
+    link: "https://github.com/mohdaizat34",
   },
   {
     id: 2,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/muhammad-aizat-817901209/"
+    link: "https://www.linkedin.com/in/muhammad-aizat-817901209/",
   },
 ];
