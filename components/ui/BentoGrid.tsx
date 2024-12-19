@@ -54,17 +54,17 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Angular", "Laravel", "Git"];
   const rightLists = ["Typescript", "Javascript", "C#", "Lua", "PHP"];
   const rightImgPath = [
-    "/ts.svg",
-    "/js.png",
-    "/c4.svg",
-    "/lua.png",
-    "/php.png",
+    "./ts.svg",
+    "./js.png",
+    "./c4.svg",
+    "./lua.png",
+    "./php.png",
   ];
   const leftImgPath = [
-    "/react.png",
-    "/angular_gradient.png",
-    "/laravel.svg",
-    "/git.png",
+    "./react.png",
+    "./angular_gradient.png",
+    "./laravel.svg",
+    "./git.png",
   ];
 
   const [copied, setCopied] = useState(false);
