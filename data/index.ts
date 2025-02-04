@@ -81,17 +81,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "My Portfolio",
-    des: "An interactive portfolio showcasing my skills, projects, and passion.",
-    img: "./portfolio.png",
-    iconLists: [
-      "./react.png",
-      "./next.svg",
-      "./tail.svg",
-      "./ts.svg",
-      "./three.svg",
-    ],
-    link: "https://github.com/mohdaizat34/my-portfolio",
+    title: "Vue Job Listing",
+    des: "A job listing app with CRUD function to showcase front end fetching data from an API and displaying it in a user-friendly interface.",
+    img: "./vueproject.png",
+    iconLists: ["./vue.svg", "./tail.svg"],
+    link: "https://vue-jobs-list.netlify.app/",
   },
   {
     id: 3,
