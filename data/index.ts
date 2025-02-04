@@ -85,7 +85,7 @@ export const projects = [
     des: "A job listing app with CRUD function to showcase front end fetching data from an API and displaying it in a user-friendly interface.",
     img: "./vueproject.png",
     iconLists: ["./vue.svg", "./tail.svg"],
-    link: "https://vue-jobs-list.netlify.app/",
+    link: "https://youtu.be/KiYnvW-PM_o",
   },
   {
     id: 3,
