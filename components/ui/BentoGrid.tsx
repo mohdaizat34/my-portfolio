@@ -51,9 +51,10 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Angular", "Laravel", "Git"];
+  const leftLists = ["VueJS", "ReactJS", "Angular", "Laravel", "Git"];
   const rightLists = ["Typescript", "Javascript", "C#", "Lua", "PHP"];
   const rightImgPath = [
+    "./vue.png",
     "./ts.svg",
     "./js.png",
     "./c4.svg",
